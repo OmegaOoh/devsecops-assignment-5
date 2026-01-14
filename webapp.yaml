@@ -35,7 +35,6 @@ spec:
                 configMapKeyRef:
                   name: mongo-config
                   key: mongo-url
-
 ---
 apiVersion: v1
 kind: Service
@@ -49,4 +48,4 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 3000
-      nodePort: 30303
+      nodePort: 30300
